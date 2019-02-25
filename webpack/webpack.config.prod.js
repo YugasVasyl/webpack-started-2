@@ -25,7 +25,8 @@ module.exports = merge(common, {
     new Webpack.optimize.ModuleConcatenationPlugin(),
     ExtractSASS,
     new CopyWebpackPlugin([
-      { from: 'src/assets', to: 'assets' }
+      { from: 'src/assets', to: 'assets' },
+      { from: 'src/templates', to: '' }
     ])
   ],
   resolve: {

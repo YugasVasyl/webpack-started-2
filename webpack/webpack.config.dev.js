@@ -20,7 +20,8 @@ module.exports = merge(common, {
       'process.env.NODE_ENV': JSON.stringify('development')
     }),
     new CopyWebpackPlugin([
-      { from: 'src/assets', to: 'assets' }
+      { from: 'src/assets', to: 'assets' },
+      { from: 'src/templates', to: '' }
     ])
   ],
   module: {
